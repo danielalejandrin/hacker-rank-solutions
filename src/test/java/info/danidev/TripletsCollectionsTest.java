@@ -1,14 +1,11 @@
 package info.danidev;
 
+import org.assertj.core.api.Assert;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.util.Assert;
 
 import java.util.Arrays;
 import java.util.List;
 
-@ExtendWith(SpringExtension.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TripletsCollectionsTest {
 
@@ -56,15 +53,8 @@ public class TripletsCollectionsTest {
     void shouldThrowAnErrorTripletsWithInvalidNumbers(){
         List<Integer> tripletC = Arrays.asList(17,28,30);
         List<Integer> tripletD = Arrays.asList(0,101,8);
-
-        Exception exception = Assertions.assertThrows(IllegalArgumentException.class,
-                                                        () -> TripletsCollections.compareTriplets(tripletC, tripletD));
-
-        String actualMessage = exception.getMessage();
-
-        Assertions.assertEquals(NUMBER_OUT_OF_RANGE, actualMessage);
-        Assert.isInstanceOf(IllegalArgumentException.class, exception);
-
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> TripletsCollections.compareTriplets(tripletC, tripletD));
     }
 
 

@@ -4,10 +4,7 @@ import org.assertj.core.util.Arrays;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-@ExtendWith(SpringExtension.class)
 public class TripletsArraysTest {
 
     public static final String TRIPLET_CONTAINS_NUMBER_OUT_OF_RANGE_1_100 = "Triplet contains number out of range [1-100]";
