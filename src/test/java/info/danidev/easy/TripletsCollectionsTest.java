@@ -1,6 +1,6 @@
-package info.danidev;
+package info.danidev.easy;
 
-import org.assertj.core.api.Assert;
+import info.danidev.easy.TripletsCollections;
 import org.junit.jupiter.api.*;
 
 import java.util.Arrays;

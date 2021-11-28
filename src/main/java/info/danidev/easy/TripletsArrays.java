@@ -1,4 +1,4 @@
-package info.danidev;
+package info.danidev.easy;
 
 public class TripletsArrays {
 

@@ -1,4 +1,4 @@
-package info.danidev;
+package info.danidev.easy;
 
 import java.util.Arrays;
 import java.util.List;
